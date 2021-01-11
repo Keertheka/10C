@@ -1,0 +1,236 @@
+<HTML>
+    <HEAD>
+    <TITLE>
+    Alumni details
+    </TITLE>
+    <STYLE>
+        *{
+            padding:0;
+            margin:0;
+            text-decoration:none;
+            list-style:none;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:montserrat;
+        }
+        header nav{
+            background:#0082e6;
+            height:80px;
+            width:100%;
+        }
+        header nav ul{
+            float:fixed;
+            margin-right:20px;
+        }
+        header nav ul li{
+            display:inline-block;
+            line-height:80px;
+            margin:0 5px;
+        }
+        header nav ul li a {
+            color:white;
+            font-size:25px;
+            padding:7px 13px;
+            border-radius:3px;
+        }
+        a.active,a:hover{
+            background:#1b9bff;
+            transition:.5s;
+        }
+        body{
+            background-image:url(a.jpg);
+            background-repeat:no-repeat;
+            background-size: 100% 1000px;
+        }
+        h2{
+            width:800px;
+            background:#123456;
+            margin:auto;
+            color:beige;
+            padding:10px 0px 10x 0px;
+            text-align:center;
+            border-radius:15px 15px 0px 0px;
+        }
+        .container{
+            background-color:rgb(0,0,0,0.5);
+            max-width:800px;
+            width:100%;
+            margin:auto;
+            padding:30px;
+            box-shadow:1px 1px 2px (rgba(0,0,0,0.125);)
+        }
+        form{
+            padding:10px;
+        }
+        .form-group {
+            margin-left:25px;
+            margin-top:30px;
+            width:125px;
+            color:white;
+            font-size:18x;
+            font-weight:700;
+        }
+        .form-control{
+            position:relative;
+            left:200px;
+            top:-37px;
+            line-height:40px;
+            border-radius:6px;
+            padding:0 22px;
+            font-size:16px;
+        }
+        .drop-down{
+          width:25rem;
+          margin-left:25px;
+            margin-top:30px;
+            width:125px;
+            color:white;
+            font-size:18x;
+            font-weight:700; 
+            padding:10px;
+            position:relative;
+            left:200px;
+            top:-37px;
+            line-height:40px;
+            border-radius:6px;
+            padding:0 22px;
+            font-size:16px;
+        }
+        .drop-down select{
+          padding:1.5rem;
+          border-radius:4px;
+          background-color:white;
+        }
+        radio{
+            display:inline-block;
+            padding-right:70px;
+            font-size:27px;
+            margin-left:25px;
+            margin-top:15px;
+            color:white;
+
+        }
+        radio input{
+            width:20x;
+            height:20px;
+            border-radius:50%;
+            cursor:pointer;
+            outline:none;
+        }
+        input[type=submit]{
+            background-color:#229228;
+            display:block;
+            margin:20px 0px 0px 20px;
+            text-align:center;
+            border-radius:12px;
+            border:2px solid #344473;
+            padding:14px 110px;
+            outline:none;
+            color:white;
+            cursor:pointer;
+            transition:0.25px;
+        }
+    </STYLE>
+    </HEAD>
+    <BODY>
+        <H1>SONA COLLEGE OF TECHNOLOGY</H1>
+        <HEADER>
+        <NAV>
+            <UL>
+            <LI><A HREF="Placement.html">Placement details</A></LI>
+            <LI><A HREF="Activity.html">Extracurricular activities</A></LI>
+            <LI><SPAN>Alumni</SPAN></LI>
+            <LI><A HREF="Contact.html">Contact</A></LI>
+            <LI><A HREF="logout.php">Sign out</A></LI>
+            </UL>
+        </NAV>
+        </HEADER>
+        <h2>Alumni  Details</h2>
+        <div class="container">
+            <form action="details.php" method="post">
+              <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  name="firstname"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastname"
+                  name="lastname"
+                />
+              </div>
+              <div class="drop-down">
+                <label for="dept">Department:</label>
+                <select id="dept" name="dept">
+                  <option value="dept">Select Department</option>
+                  <option value="Mech">Mechanical Engineering</option>
+                  <option value="Civil">Civil Engineering</option>
+                  <option value="EEE">Elecrical and Electronics Engineering</option>
+                  <option value="ECE">Electronics and Communication Engineering</option>
+                  <option value="IT">Information Technology</option>
+                  <option value="CSE">Computer Science and Engineering</option>
+                  <option value="FT">Fashion Technology</option>
+                </select>
+              </div>
+              <div class="drop-down">
+                <label for="batch">Batch:</label>
+                <select id="batch" name="batch">
+                  <option value="batch">Select batch</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="mobilenumber">Contact Number:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="mobilenumber"
+                  name="mobilenumber"
+                />
+              </div>
+              <div class="form-group">
+                <label for="placed">Are you Placed:</label>
+                <input
+                  type="radio"
+                  class="radio-inline"
+                  id="placed"
+                  name="placed"
+                  value="Y"
+                />YES
+                <input
+                  type="radio"
+                  class="radio-inline"
+                  id="placed"
+                  name="placed"
+                  value="N"
+                />NO
+              </div>
+              <input  type="Submit" class="btn btn-primary" />
+            </form>
+            </div>
+            <a href="Placement.html">Previous page...</a>
+        
+    </BODY>
+    </HTML>
+    
+    

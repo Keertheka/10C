@@ -1,0 +1,72 @@
+  span {
+color:red
+}
+h2
+{
+text-align:center;
+border-radius:10px 10px 0 0;
+margin:-10px -40px;
+padding:15px
+}
+hr
+{
+border:0;
+border-bottom:1px solid;
+margin:10px -40px;
+margin-bottom:30px
+}
+#login
+{
+    max-width:350px;
+    border-radius:20px;
+    margin:auto;
+    background-color:#b6e;
+    box-sizing:border-box;
+    padding:40px;
+    color:black;
+    margin-top:50px
+}
+input[type=text],input[type=password]
+{
+width:96.5%;
+padding:10px;
+margin-top:8px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:20px;
+}
+input[type=submit]{
+    width:100%;
+    box-sizing:border-box;
+    padding:10px 0;
+    margin-top:30px;
+    outline:none;
+    border:none;
+    background:#0be01d;
+    opacity:0.7;
+    border-radius:20px;
+    font-size:20px;
+    color:#fff;
+  }
+#profile
+{
+padding:50px;
+border:1px dashed grey;
+font-size:20px;
+background-color:#DCE6F7
+}
+#logout
+{
+float:right;
+padding:5px;
+border:dashed 1px gray
+}
+a
+{
+text-decoration:none;
+color:#b6e;
+}
+i
+{
+color:#b6e;
+}
